@@ -6,7 +6,10 @@
   --primary-hover: #eece00;
   --secondary-color: #fbbc05;
   --background-color: #000000;
+  --card-background: #0e0e0e;
+  --card-category: #272727;
   --text-color: #ffffff;
+  --text-gray: #c0c0c0;
   --font-secondary: "Bebas Neue", sans-serif;
   --font-primary: "Poppins", sans-serif;
 }
