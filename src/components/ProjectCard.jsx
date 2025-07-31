@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = ({ image, title, desc, stack }) => {
   return (
     <div
-      className="rounded-xl shadow-md overflow-hidden w-full "
+      className="rounded-xl shadow-md overflow-hidden w-full cursor-pointer "
       style={{
         backgroundColor: "var(--card-background)",
         color: "var(--text-color)",

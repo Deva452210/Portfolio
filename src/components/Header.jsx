@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icon library, install with: npm install lucide-react
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleClick = () => {
+    navigate("/");
+  };
 
   return (
     <header
@@ -14,7 +20,8 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div
-          className="text-4xl font-bold"
+          className="text-4xl font-bold cursor-pointer"
+          onClick={handleClick}
           style={{
             color: "var(--text-color)",
             fontFamily: "var(--font-secondary)",
