@@ -96,6 +96,123 @@
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
       "category": "UI/UX"
+    },
+    {
+      "id": 13,
+      "image": "/assets/projects/recent-blog.jpg",
+      "title": "Banking App Redesign",
+      "desc": "Revamped UI for a modern banking experience.",
+      "stack": ["Figma", "User Flow", "Design System"],
+      "category": "UI/UX"
+    }
+  ],
+   "MySkills": [
+    {
+      "id": 1,
+      "name": "HTML",
+      "image": "/assets/skills/html.png"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "image": "/assets/skills/css.png"
+    },
+    {
+      "id": 3,
+      "name": "JavaScript",
+      "image": "/assets/skills/javascript.png"
+    },
+    {
+      "id": 4,
+      "name": "ReactJS",
+      "image": "/assets/skills/react.png"
+    },
+      {
+      "id": 5,
+      "name": "Redux",
+      "image": "/assets/skills/redux.png"
+    },
+    {
+      "id": 6,
+      "name": "Tailwind CSS",
+      "image": "/assets/skills/tailwind.png"
+    },
+    {
+      "id": 7,
+      "name": "Node.js",
+      "image": "/assets/skills/node.png"
+    },
+   
+    {
+      "id": 8,
+      "name": "MongoDB",
+      "image": "/assets/skills/mongodb.png"
+    },
+    {
+      "id": 9,
+      "name": "Java",
+      "image": "/assets/skills/java.png"
+    },
+    {
+      "id": 10,
+      "name": "Springboot",
+      "image": "/assets/skills/spring.png"
+    },
+  
+    {
+      "id": 11,
+      "name": "Jenkins",
+      "image": "/assets/skills/jenkins.png"
+    },
+    {
+      "id": 12,
+      "name": "Docker",
+      "image": "/assets/skills/docker.png"
+    },
+    {
+      "id": 13,
+      "name": "Mysql",
+      "image": "/assets/skills/mysql.png"
+    },
+    {
+      "id": 14,
+      "name": "Graphql",
+      "image": "/assets/skills/graphql.png"
+    }
+  ],
+  
+  "MyCaseStudies": [
+    {
+      "id": 1,
+      "title": "Tea Stall Innovation During COVID",
+      "subtitle": "Organic Snacks | Zero Plastic | 3x Sales Growth",
+        "image": "/assets/projects/recent-blog.jpg",
+      "problem": "During COVID, tea stall business was hit due to fewer customers and hygiene concerns.",
+      "solution": "Introduced handmade organic snacks with long shelf life and zero plastic packaging based on customer observations. Marketed it via word of mouth.",
+      "impact": [
+        "3x business growth within a few months",
+        "Built trust with eco-friendly packaging",
+        "Learned customer-first thinking & persistence"
+      ],
+      "toolsUsed": ["Market Research", "Customer Observation", "Packaging Design"],
+      "tags": ["Entrepreneurship", "Problem Solving", "Sustainability"]
+    },
+    {
+      "id": 2,
+      "title": "Siva E-Corner Digital Access",
+      "subtitle": "Government Services Made Easy",
+       "image": "/assets/projects/recent-blog.jpg",
+      "problem": "Users found it difficult to access or understand various e-governance services provided through CSC and e-Sevai centers.",
+      "solution": "Designed a centralized platform where users can search for services, know required documents, fees, and processing time.",
+      "impact": [
+        "Improved service clarity for users",
+        "Reduced walk-ins with pre-informed users",
+        "Increased digital engagement with local services"
+      ],
+      "toolsUsed": ["Figma", "User Research", "UI/UX Design"],
+      "tags": ["UI/UX", "Service Design", "GovTech"]
     }
   ]
+
+
 }

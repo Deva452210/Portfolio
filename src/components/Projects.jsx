@@ -50,7 +50,7 @@ const Projects = () => {
       </div>
 
       {/* Project Cards */}
-      <div className="max-w-7xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-2 justify-items-center ">
+      <div className="max-w-6xl mx-auto grid gap-4 sm:grid-cols-2 lg:grid-cols-2 justify-items-center ">
         {filteredProjects.slice(0, 2).map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}

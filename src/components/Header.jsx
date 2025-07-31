@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icon library, install with: npm install lucide-react
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,20 +32,20 @@ const Header = () => {
 
         {/* Desktop Buttons */}
         <div
-          className="hidden md:flex gap-4 "
+          className="hidden md:flex gap-2 "
           style={{ fontFamily: "var(--font-primary)" }}
         >
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            About
+            <Link to={"/projects"}>Projects</Link>
           </button>
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            Projects
+            Side Gigs
           </button>
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            Contact
+            Collection
           </button>
           <button
-            className="px-4 py-2 rounded-md font-bold cursor-pointer transition text-black"
+            className="px-4 py-2 rounded font-bold cursor-pointer transition text-black"
             style={{
               backgroundColor: "var(--primary-color)",
             }}
