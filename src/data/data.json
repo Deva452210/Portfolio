@@ -1,9 +1,10 @@
+
 {
   "MyProjects": [
    
     {
       "id": 1,
-      "image": "/projects/recent1.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Portfolio Website",
       "desc": "A personal portfolio website showcasing projects, skills, and contact info.",
       "stack": ["React", "Tailwind CSS", "EmailJS"],
@@ -11,97 +12,90 @@
     },
     {
       "id": 2,
-      "image": "/projects/recent2.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Blog CMS",
       "desc": "A content management system for creating and publishing blog posts.",
       "stack": ["Node.js", "MongoDB", "Express"],
       "category": "Recent"
     },
-    {
-      "id": 3,
-      "image": "/projects/recent3.jpg",
-      "title": "E-Commerce Admin Dashboard",
-      "desc": "Dashboard to manage products, orders, and customers.",
-      "stack": ["React", "Redux", "Chart.js"],
-      "category": "Recent"
-    },
+    
 
    
     {
       "id": 4,
-      "image": "/projects/java1.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Bank Management System",
       "desc": "A console-based banking app for managing accounts and transactions.",
       "stack": ["Java", "JDBC", "MySQL"],
-      "category": "java"
+      "category": "Java/Spingboot"
     },
     {
       "id": 5,
-      "image": "/projects/java2.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Library Management App",
       "desc": "Desktop app to manage book lending and member registration.",
       "stack": ["JavaFX", "Java", "SQLite"],
-      "category": "java"
+      "category": "Java/Spingboot"
     },
     {
       "id": 6,
-      "image": "/projects/java3.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Student Grading System",
       "desc": "CLI-based application to manage student records and grades.",
       "stack": ["Java", "OOP", "File I/O"],
-      "category": "java"
+      "category": "Java/Spingboot"
     },
 
     
     {
       "id": 7,
-      "image": "/projects/frontend1.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Weather App",
       "desc": "Fetches weather data from API and displays it beautifully.",
       "stack": ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-      "category": "frontend"
+      "category": "Frontend"
     },
     {
       "id": 8,
-      "image": "/projects/frontend2.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "To-Do List",
       "desc": "Simple yet interactive to-do app with task management.",
       "stack": ["React", "CSS Modules"],
-      "category": "frontend"
+      "category": "Frontend"
     },
     {
       "id": 9,
-      "image": "/projects/frontend3.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
-      "category": "frontend"
+      "category": "Frontend"
     },
 
     
     {
       "id": 10,
-      "image": "/projects/uiux1.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Travel App UI",
       "desc": "Figma design of a travel booking mobile app.",
       "stack": ["Figma", "UI Kit", "Prototyping"],
-      "category": "uiux"
+      "category": "UI/UX"
     },
     {
       "id": 11,
-      "image": "/projects/uiux2.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Food Delivery Web UI",
       "desc": "Responsive web UI for a food delivery platform.",
       "stack": ["Adobe XD", "Wireframes", "Responsive Grid"],
-      "category": "uiux"
+      "category": "UI/UX"
     },
     {
       "id": 12,
-      "image": "/projects/uiux3.jpg",
+      "image": "/assets/projects/recent-blog.jpg",
       "title": "Banking App Redesign",
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
-      "category": "uiux"
+      "category": "UI/UX"
     }
   ]
 }

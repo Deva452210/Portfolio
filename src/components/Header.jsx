@@ -7,13 +7,27 @@ const Header = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full px-6 py-4 bg-primary text-text-color shadow-md fixed top-0 left-0 z-50">
+    <header
+      className="w-full px-6 py-6 text-text-color shadow-md fixed top-0 left-0 z-50"
+      style={{ backgroundColor: "var(--background-color)" }}
+    >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white">DEVAKARUN</div>
+        <div
+          className="text-4xl font-bold"
+          style={{
+            color: "var(--text-color)",
+            fontFamily: "var(--font-secondary)",
+          }}
+        >
+          DEVAKARUN
+        </div>
 
         {/* Desktop Buttons */}
-        <div className="hidden md:flex gap-4 ">
+        <div
+          className="hidden md:flex gap-4 "
+          style={{ fontFamily: "var(--font-primary)" }}
+        >
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
             About
           </button>
@@ -23,7 +37,18 @@ const Header = () => {
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
             Contact
           </button>
-          <button className="px-4 py-2 rounded-md bg-amber-300 hover:bg-amber-400 text-black font-bold cursor-pointer transition">
+          <button
+            className="px-4 py-2 rounded-md font-bold cursor-pointer transition text-black"
+            style={{
+              backgroundColor: "var(--primary-color)",
+            }}
+            onMouseEnter={(e) =>
+              (e.target.style.backgroundColor = "var(--primary-hover)")
+            }
+            onMouseLeave={(e) =>
+              (e.target.style.backgroundColor = "var(--primary-color)")
+            }
+          >
             Resume
           </button>
         </div>
