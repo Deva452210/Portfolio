@@ -1,6 +1,5 @@
-import React from "react";
-import profileImg from "/assets/heroBg.png";
 import nameImg from "/assets/name.png";
+import { Github, Linkedin, Brush } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -32,9 +31,52 @@ const Hero = () => {
           <img src={nameImg} alt="" />
 
           {/* Description (Bottom) */}
-          <p className="text-lg md:text-lg max-w-md text-center">
+          <p className="text-lg md:text-lg max-w-lg text-center">
             I am a Software developer with 1+ years of experience
           </p>
+
+          {/* Contact */}
+          <div className="flex items-center justify-center gap-4 mt-4">
+            <button
+              className="px-4 py-2 rounded font-bold text-black  cursor-pointer transition hover:scale-110"
+              style={{
+                backgroundColor: "var(--card-category)",
+                color: "var(--text-color)",
+              }}
+            >
+              Contact me
+            </button>
+            <button
+              className="px-4 py-2 rounded font-bold  text-black  cursor-pointer transition hover:scale-110"
+              style={{
+                backgroundColor: "var(--primary-color)",
+              }}
+            >
+              Resume
+            </button>
+          </div>
+
+          {/* Social Icons */}
+          <div className="mt-4 flex items-center justify-center gap-4">
+            <div
+              className="p-4 rounded-full cursor-pointer transition hover:scale-110"
+              style={{ backgroundColor: "var(--card-category)" }}
+            >
+              <Github />
+            </div>
+            <div
+              className="p-4 rounded-full cursor-pointer transition hover:scale-110"
+              style={{ backgroundColor: "var(--card-category)" }}
+            >
+              <Linkedin />
+            </div>
+            <div
+              className="p-4 rounded-full cursor-pointer transition hover:scale-110"
+              style={{ backgroundColor: "var(--card-category)" }}
+            >
+              <Brush />
+            </div>
+          </div>
         </div>
 
         {/* Right Section (Profile Image) */}

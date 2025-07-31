@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icon library, install with: npm install lucide-react
 import { Link, useNavigate } from "react-router-dom";
+import logo from "/assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,8 @@ const Header = () => {
         <div
           className="text-4xl font-bold cursor-pointer"
           onClick={handleClick}
-          style={{
-            color: "var(--text-color)",
-            fontFamily: "var(--font-secondary)",
-          }}
         >
-          DEVAKARUN
+          <img src={logo} alt="" className=" w-[60px] object-cover" />
         </div>
 
         {/* Desktop Buttons */}
@@ -47,14 +44,8 @@ const Header = () => {
           <button
             className="px-4 py-2 rounded font-bold cursor-pointer transition text-black"
             style={{
-              backgroundColor: "var(--primary-color)",
+              color: "var(--primary-color)",
             }}
-            onMouseEnter={(e) =>
-              (e.target.style.backgroundColor = "var(--primary-hover)")
-            }
-            onMouseLeave={(e) =>
-              (e.target.style.backgroundColor = "var(--primary-color)")
-            }
           >
             Resume
           </button>
