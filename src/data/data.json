@@ -106,6 +106,7 @@
       "category": "UI/UX"
     }
   ],
+  
    "MySkills": [
     {
       "id": 1,
@@ -212,7 +213,45 @@
       "toolsUsed": ["Figma", "User Research", "UI/UX Design"],
       "tags": ["UI/UX", "Service Design", "GovTech"]
     }
+  ],
+  
+  "MyCollections": [
+    {
+      "id": 1,
+      "name": "Atomic Habits",
+      "description": "A guide to building good habits and breaking bad ones.",
+      "images": [
+        "/assets/books/book-1.jpeg",
+        "/assets/books/book-2.jpeg",
+        "/assets/books/book-1.jpeg"
+      
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Deep Work",
+      "description": "Rules for focused success in a distracted world.",
+      "images": [
+        "/assets/books/book-1.jpeg",
+        "/assets/books/book-2.jpeg",
+        "/assets/books/book-1.jpeg"
+      
+      ]
+    },
+    {
+      "id": 3,
+      "name": "The Design of Everyday Things",
+      "description": "Essential reading for UX and product designers.",
+       "images": [
+        "/assets/books/book-1.jpeg",
+        "/assets/books/book-2.jpeg",
+        "/assets/books/book-1.jpeg"
+      
+      ]
+    }
   ]
+
+
 
 
 }

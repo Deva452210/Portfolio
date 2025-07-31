@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header
       className="w-full px-6 py-6 text-text-color shadow-md fixed top-0 left-0 z-50"
-      style={{ backgroundColor: "var(--background-color)" }}
+      style={{ backgroundColor: "var(--background-color-lite)" }}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
