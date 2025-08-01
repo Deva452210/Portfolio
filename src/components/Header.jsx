@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react"; // icon library, install with: npm install lucide-react
 import { Link, useNavigate } from "react-router-dom";
-import logo from "/assets/logo.png";
+import logo from "/assets/logo-1.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,7 @@ const Header = () => {
           className="text-4xl font-bold cursor-pointer"
           onClick={handleClick}
         >
-          <img src={logo} alt="" className=" w-[60px] object-cover" />
+          <img src={logo} alt="" className=" w-[50px] object-cover" />
         </div>
 
         {/* Desktop Buttons */}
@@ -33,13 +33,13 @@ const Header = () => {
           style={{ fontFamily: "var(--font-primary)" }}
         >
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            <Link to={"/projects"}>Projects</Link>
+            <Link to={"/allprojects"}>Projects</Link>
           </button>
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            Side Gigs
+            <Link to={"/allsidegigs"}>Side Gigs</Link>
           </button>
           <button className="px-4 py-2 rounded-md hover:cursor-pointer">
-            Collection
+            <Link to={"/allcollections"}>Collection</Link>
           </button>
           <button
             className="px-4 py-2 rounded font-bold cursor-pointer transition text-black"
@@ -62,9 +62,6 @@ const Header = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden mt-3 flex flex-col gap-3 px-4 pb-4">
-          <button className="w-full text-left px-4 py-2 rounded-md hover:bg-blue-100 transition">
-            About
-          </button>
           <button className="w-full text-left px-4 py-2 rounded-md hover:bg-blue-100 transition">
             Projects
           </button>

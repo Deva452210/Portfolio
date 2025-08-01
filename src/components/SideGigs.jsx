@@ -13,7 +13,12 @@ const SideGigs = () => {
         color: "var(--text-color)",
       }}
     >
-      <h2 className="text-4xl font-bold mb-10">SIDE GIGS</h2>
+      <h2
+        className="text-5xl font-bold mb-10"
+        style={{ fontFamily: "var(--font-secondary)" }}
+      >
+        SIDE GIGS
+      </h2>
 
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
         {data.MyCaseStudies.map((gig) => (

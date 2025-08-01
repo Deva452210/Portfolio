@@ -18,7 +18,12 @@ const Collection = () => {
         color: "var(--text-color)",
       }}
     >
-      <h2 className="text-4xl font-bold mb-10">MY COLLECTION</h2>
+      <h2
+        className="text-5xl font-bold mb-10"
+        style={{ fontFamily: "var(--font-secondary)" }}
+      >
+        MY COLLECTION
+      </h2>
 
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {data.MyCollections.map((book) => (

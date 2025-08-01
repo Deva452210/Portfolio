@@ -30,7 +30,12 @@ const Projects = () => {
         color: "var(--text-color)",
       }}
     >
-      <h2 className="text-4xl font-bold mb-6">PROJECTS</h2>
+      <h2
+        className="text-5xl font-bold mb-6"
+        style={{ fontFamily: "var(--font-secondary)" }}
+      >
+        PROJECTS
+      </h2>
 
       {/* Tabs */}
       <div className="flex flex-wrap justify-center gap-4 mb-10">

@@ -1,5 +1,6 @@
 import nameImg from "/assets/name.png";
-import { Github, Linkedin, Brush } from "lucide-react";
+import { Github, Linkedin, Brush, CodeXml } from "lucide-react";
+// import profileImg from "/assets/heroBg.png";
 
 const Hero = () => {
   return (
@@ -18,17 +19,16 @@ const Hero = () => {
         {/* Left Section */}
         <div className="flex flex-col items-center justify-center gap-2 w-fit">
           {/* Name (Top) */}
-          {/* <h1
+          {/* <h1 
             className="text-4xl md:text-6xl font-bold"
             style={{
               fontFamily: "var(--font-secondary)",
-              color: "var(--primary-color)",
-            }}
+              color: "var(--primary-color)",}}
           >
             I’m Devakarun
           </h1> */}
 
-          <img src={nameImg} alt="" />
+          <img src={nameImg} alt="" className=" object-cover" />
 
           {/* Description (Bottom) */}
           <p className="text-lg md:text-lg max-w-lg text-center">
@@ -75,6 +75,12 @@ const Hero = () => {
               style={{ backgroundColor: "var(--card-category)" }}
             >
               <Brush />
+            </div>
+            <div
+              className="p-4 rounded-full cursor-pointer transition hover:scale-110"
+              style={{ backgroundColor: "var(--card-category)" }}
+            >
+              <CodeXml />
             </div>
           </div>
         </div>
