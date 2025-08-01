@@ -64,7 +64,7 @@ const Projects = () => {
       <div className="mt-8">
         <button
           onClick={handleViewAll}
-          className="px-6 py-2 cursor-pointer text-sm font-semibold rounded-sm bg-[var(--card-category)] text-[var(--text-color)] hover:bg-[var(--card-background)] transition"
+          className="px-6 py-2 cursor-pointer text-sm font-semibold rounded-sm bg-[var(--card-category)] text-[var(--text-color)] hover:bg-[#313131]"
         >
           View All
         </button>

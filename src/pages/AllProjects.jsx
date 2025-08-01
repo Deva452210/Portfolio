@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import data from "../data/data.json";
 import ProjectCard from "../components/ProjectCard";
+import BackButton from "../components/BackButton";
 
 const categories = ["Recent", "Java/Spingboot", "Frontend", "UI/UX"];
 
@@ -26,12 +27,21 @@ const AllProjects = () => {
         color: "var(--text-color)",
       }}
     >
-      <h2
-        className=" text-5xl font-bold mb-10 text-center"
-        style={{ fontFamily: "var(--font-secondary)" }}
-      >
-        Projects
-      </h2>
+      <div className="max-w-7xl mx-auto relative flex items-center justify-between mb-10">
+        {/* Back Button on the left */}
+        <div className="absolute left-0">
+          <BackButton />
+        </div>
+
+        {/* Centered Title */}
+        <h2
+          className="w-full text-5xl font-bold text-center"
+          style={{ fontFamily: "var(--font-secondary)" }}
+        >
+          PROJECTS
+        </h2>
+      </div>
+
       {/* Category Tabs */}
       <div className="flex flex-wrap justify-center gap-4 mb-10">
         {categories.map((category) => (

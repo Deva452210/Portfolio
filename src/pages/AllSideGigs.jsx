@@ -1,6 +1,7 @@
 import React from "react";
 import data from "../data/data.json";
 import { useNavigate } from "react-router-dom";
+import BackButton from "../components/BackButton";
 
 const AllSideGigs = () => {
   const navigate = useNavigate();
@@ -17,14 +18,22 @@ const AllSideGigs = () => {
         color: "var(--text-color)",
       }}
     >
-      <h2
-        className="text-5xl font-bold mb-10"
-        style={{ fontFamily: "var(--font-secondary)" }}
-      >
-        SIDE GIGS
-      </h2>
+      <div className="max-w-7xl mx-auto relative flex items-center justify-between mb-10">
+        {/* Back Button on the left */}
+        <div className="absolute left-0">
+          <BackButton />
+        </div>
 
-      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
+        {/* Centered Title */}
+        <h2
+          className="w-full text-5xl font-bold text-center"
+          style={{ fontFamily: "var(--font-secondary)" }}
+        >
+          SIDE GIGS
+        </h2>
+      </div>
+
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-7xl mx-auto">
         {data.MyCaseStudies.map((gig) => (
           <div
             key={gig.id}
