@@ -218,34 +218,84 @@
   "MyCollections": [
     {
       "id": 1,
-      "name": "Atomic Habits",
-      "description": "A guide to building good habits and breaking bad ones.",
+      "name": "Wings of Fire - APJ Abdul Kalam",
+      "description": "Abdul Kalam with Arun Tiwari",
       "images": [
-        "/assets/books/book-1.jpeg",
-        "/assets/books/book-2.jpeg",
-        "/assets/books/book-1.jpeg"
+        "/assets/books/ak-1.jpg",
+        "/assets/books/ak-2.jpg",
+        "/assets/books/ak-3.jpg",
+        "/assets/books/ak-4.jpg",
+        "/assets/books/ak-5.jpg",
+        "/assets/books/ak-6.jpg"
       
       ]
     },
     {
       "id": 2,
-      "name": "Deep Work",
-      "description": "Rules for focused success in a distracted world.",
+      "name": "The Alchemist",
+      "description": "Paulo Coelho",
       "images": [
-        "/assets/books/book-1.jpeg",
-        "/assets/books/book-2.jpeg",
-        "/assets/books/book-1.jpeg"
+        "/assets/books/alchemist-1.jpg",
+        "/assets/books/alchemist-2.jpg",
+        "/assets/books/alchemist-3.jpg",
+        "/assets/books/alchemist-4.jpg",
+        "/assets/books/alchemist-4.jpg"
       
       ]
     },
     {
       "id": 3,
-      "name": "The Design of Everyday Things",
-      "description": "Essential reading for UX and product designers.",
+      "name": "Elon musk",
+      "description": "Ashlee Vance",
        "images": [
-        "/assets/books/book-1.jpeg",
-        "/assets/books/book-2.jpeg",
-        "/assets/books/book-1.jpeg"
+        "/assets/books/elon-1.jpg",
+        "/assets/books/elon-2.jpg",
+        "/assets/books/elon-3.jpg"
+      
+      ]
+    },
+    {
+      "id": 4,
+      "name": "The Housemaid",
+      "description": "Freida McFadden",
+       "images": [
+        "/assets/books/hm-1.jpg",
+        "/assets/books/hm-2.jpg",
+        "/assets/books/hm-3.jpg",
+        "/assets/books/hm-4.jpg"
+      
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Jonathan Livingston Seagull",
+      "description": "Richard Bach",
+       "images": [
+        "/assets/books/js-1.jpg",
+        "/assets/books/js-2.jpg",
+        "/assets/books/js-3.jpg"
+      
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Light from Many Lamps",
+      "description": "Lillian Eichler Watson",
+       "images": [
+        "/assets/books/lamp-1.jpg",
+        "/assets/books/lamp-2.jpg",
+        "/assets/books/lamp-3.jpg"
+      
+      ]
+    },
+    {
+      "id": 7,
+      "name": "The Lies of Locke Lamora",
+      "description": "Scott Lynch",
+       "images": [
+        "/assets/books/lock-1.jpg",
+        "/assets/books/lock-2.jpg",
+        "/assets/books/lock-3.jpg"
       
       ]
     }

@@ -10,6 +10,9 @@ const Collection = () => {
     navigate("/allcollections");
   };
 
+  // Show only first 3 items
+  const topThreeCollections = data.MyCollections.slice(0, 3);
+
   return (
     <section
       className="py-16 px-4 text-center"
@@ -26,7 +29,7 @@ const Collection = () => {
       </h2>
 
       <div className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
-        {data.MyCollections.map((book) => (
+        {topThreeCollections.map((book) => (
           <CollectionCard key={book.id} {...book} />
         ))}
       </div>

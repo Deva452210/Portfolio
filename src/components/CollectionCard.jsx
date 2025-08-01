@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CollectionCard = ({ name, description, images }) => {
   const [current, setCurrent] = useState(0);
@@ -50,23 +51,22 @@ const CollectionCard = ({ name, description, images }) => {
         <img
           src={images[current]}
           alt={name}
-          className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover transition-all duration-300"
+          className="w-full h-80 sm:h-80 md:h-80 lg:h-120 object-cover transition-all duration-300"
         />
 
         {/* Prev Button */}
         <button
           onClick={prevImage}
-          className="absolute top-1/2 -translate-y-1/2 left-2 bg-gray-900 bg-opacity-30 text-white px-4 py-2 text-xl cursor-pointer rounded-full"
+          className="absolute top-1/2 -translate-y-1/2 left-2 bg-[rgba(17,17,17,0.5)] hover:bg-[rgba(17,17,17,1)] text-white px-2 py-2 cursor-pointer rounded-full"
         >
-          ‹
+          <ChevronLeft size={20} />
         </button>
 
-        {/* Next Button */}
         <button
           onClick={nextImage}
-          className="absolute top-1/2 -translate-y-1/2 right-2 bg-gray-900 bg-opacity-30 text-white px-4 py-2 text-xl cursor-pointer rounded-full"
+          className="absolute top-1/2 -translate-y-1/2 right-2 bg-[rgba(17,17,17,0.5)] hover:bg-[rgba(17,17,17,1)] text-white px-2 py-2 cursor-pointer rounded-full "
         >
-          ›
+          <ChevronRight size={20} />
         </button>
       </div>
 
