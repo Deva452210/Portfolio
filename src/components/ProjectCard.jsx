@@ -1,9 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const ProjectCard = ({ image, title, desc, stack }) => {
+const ProjectCard = ({ image, title, desc, stack, ...project }) => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/project/${project.id}`, {
+      state: { project: { image, title, desc, stack, ...project } },
+    });
+  };
+
   return (
     <div
-      className="rounded-xl shadow-md overflow-hidden w-full cursor-pointer "
+      onClick={handleClick}
+      className="rounded-xl shadow-md overflow-hidden w-full cursor-pointer hover:shadow-lg transition"
       style={{
         backgroundColor: "var(--card-background)",
         color: "var(--text-color)",
@@ -15,7 +25,7 @@ const ProjectCard = ({ image, title, desc, stack }) => {
         <p className="text-sm mb-3" style={{ color: "var(--text-gray)" }}>
           {desc}
         </p>
-        <h3 className=" font-medium mb-2">Tech Stack:</h3>
+        <h3 className="font-medium mb-2">Tech Stack:</h3>
         <div className="flex flex-wrap gap-2">
           {stack.map((tech, index) => (
             <span

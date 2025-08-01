@@ -5,6 +5,7 @@ import AllProjects from "./pages/AllProjects";
 import SideGigsDetails from "./pages/SideGigsDetails";
 import AllSideGigs from "./pages/AllSideGigs";
 import AllCollections from "./pages/AllCollection";
+import ProjectDetails from "./pages/ProjectDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/sidegigsdetails" element={<SideGigsDetails />} />
           <Route path="/allsidegigs" element={<AllSideGigs />} />
           <Route path="/allcollections" element={<AllCollections />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
         </Routes>
       </div>
     </div>
