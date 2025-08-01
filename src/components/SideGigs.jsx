@@ -24,7 +24,7 @@ const SideGigs = () => {
         {data.MyCaseStudies.map((gig) => (
           <div
             key={gig.id}
-            onClick={() => navigate("/sidegigs", { state: gig })}
+            onClick={() => navigate("/sidegigsdetails", { state: gig })}
             className=" cursor-pointer rounded-lg shadow-md text-left hover:shadow-xl transition"
           >
             <img

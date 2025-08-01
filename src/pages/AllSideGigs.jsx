@@ -1,40 +1,52 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import data from "../data/data.json";
 
 const AllSideGigs = () => {
-  const { state: gig } = useLocation();
-  const navigate = useNavigate();
-
-  if (!gig) {
-    return (
-      <div className="pt-24 text-center">
-        <p>No side gig found.</p>
-        <button onClick={() => navigate(-1)} className="underline mt-4">
-          Go Back
-        </button>
-      </div>
-    );
-  }
-
   return (
-    <section className="pt-32 px-4 max-w-4xl mx-auto">
-      <img
-        src={gig.image}
-        alt={gig.title}
-        className="w-full max-h-fit object-cover rounded-lg mb-6"
-      />
-      <h1 className="text-4xl font-bold mb-2">{gig.title}</h1>
-      <p className="italic text-gray-600 mb-4">{gig.subtitle}</p>
-      <div className="flex flex-wrap gap-2 mb-6">
-        {gig.tags.map((tag, i) => (
-          <span key={i} className="bg-gray-200 text-sm px-3 py-1 rounded-full">
-            {tag}
-          </span>
+    <section
+      className=" pt-32 py-16 px-4 text-center"
+      style={{
+        backgroundColor: "var(--background-color-lite)",
+        color: "var(--text-color)",
+      }}
+    >
+      <h2
+        className="text-5xl font-bold mb-10"
+        style={{ fontFamily: "var(--font-secondary)" }}
+      >
+        SIDE GIGS
+      </h2>
+
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 max-w-6xl mx-auto">
+        {data.MyCaseStudies.map((gig) => (
+          <div
+            key={gig.id}
+            className="rounded-lg shadow-md text-left hover:shadow-xl transition cursor-pointer"
+          >
+            <img
+              src={gig.image}
+              alt={gig.title}
+              className="w-full h-fit object-cover rounded-md mb-4"
+            />
+            <div className="px-4 pb-4">
+              <h3 className="text-xl font-bold mb-1">{gig.title}</h3>
+              <p className="text-sm text-gray-600 mb-2 italic">
+                {gig.subtitle}
+              </p>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {gig.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 text-sm px-3 py-1 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         ))}
       </div>
-      <p className="text-lg leading-relaxed">
-        {gig.description || "Description coming soon..."}
-      </p>
     </section>
   );
 };
