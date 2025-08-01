@@ -4,6 +4,7 @@ import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import SideGigs from "../components/SideGigs";
 import Collection from "../components/Collection";
+import ScrollToTopButton from "../components/ScrollToTopButton"; // Add this
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Skills />
       <SideGigs />
       <Collection />
+      <ScrollToTopButton /> {/* Add this */}
     </div>
   );
 };
