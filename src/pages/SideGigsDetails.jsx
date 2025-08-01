@@ -1,42 +1,48 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import data from "../data/data.json";
 
-const SideGigsDetails = () => {
-  const { state: gig } = useLocation();
-  const navigate = useNavigate();
+const SideGigDetails = () => {
+  const { id } = useParams();
+  const gig = data.MyCaseStudies.find((item) => item.id.toString() === id);
 
   if (!gig) {
     return (
-      <div className="pt-24 text-center">
-        <p>No side gig found.</p>
-        <button onClick={() => navigate(-1)} className="underline mt-4">
-          Go Back
-        </button>
+      <div className="pt-32 text-center text-red-500 text-xl">
+        No details found for this side gig.
       </div>
     );
   }
 
   return (
-    <section className="pt-32 px-4 max-w-4xl mx-auto">
+    <section
+      className="pt-32 px-4 py-16 max-w-4xl mx-auto"
+      style={{
+        backgroundColor: "var(--background-color-lite)",
+        color: "var(--text-color)",
+      }}
+    >
+      <h1 className="text-4xl font-bold mb-6">{gig.title}</h1>
       <img
         src={gig.image}
         alt={gig.title}
-        className="w-full max-h-fit object-cover rounded-lg mb-6"
+        className="w-full rounded-lg mb-6 object-cover"
       />
-      <h1 className="text-4xl font-bold mb-2">{gig.title}</h1>
-      <p className="italic text-gray-600 mb-4">{gig.subtitle}</p>
-      <div className="flex flex-wrap gap-2 mb-6">
-        {gig.tags.map((tag, i) => (
-          <span key={i} className="bg-gray-200 text-sm px-3 py-1 rounded-full">
+      <p className="text-lg italic text-gray-400 mb-4">{gig.subtitle}</p>
+      <div className="text-sm mb-6">{gig.description}</div>
+
+      <div className="flex flex-wrap gap-2">
+        {gig.tags.map((tag, index) => (
+          <span
+            key={index}
+            className="bg-gray-700 text-white px-3 py-1 rounded-full text-xs"
+          >
             {tag}
           </span>
         ))}
       </div>
-      <p className="text-lg leading-relaxed">
-        {gig.description || "Description coming soon..."}
-      </p>
     </section>
   );
 };
 
-export default SideGigsDetails;
+export default SideGigDetails;

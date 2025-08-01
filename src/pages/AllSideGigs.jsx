@@ -1,10 +1,17 @@
 import React from "react";
 import data from "../data/data.json";
+import { useNavigate } from "react-router-dom";
 
 const AllSideGigs = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (gig) => {
+    navigate(`/sidegig/${gig.id}`, { state: { gig } });
+  };
+
   return (
     <section
-      className=" pt-32 py-16 px-4 text-center"
+      className="pt-32 py-16 px-4 text-center"
       style={{
         backgroundColor: "var(--background-color-lite)",
         color: "var(--text-color)",
@@ -21,6 +28,7 @@ const AllSideGigs = () => {
         {data.MyCaseStudies.map((gig) => (
           <div
             key={gig.id}
+            onClick={() => handleCardClick(gig)}
             className="rounded-lg shadow-md text-left hover:shadow-xl transition cursor-pointer"
           >
             <img
@@ -33,16 +41,6 @@ const AllSideGigs = () => {
               <p className="text-sm text-gray-600 mb-2 italic">
                 {gig.subtitle}
               </p>
-              <div className="flex flex-wrap gap-2 mt-3">
-                {gig.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="bg-gray-200 text-sm px-3 py-1 rounded-full"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </div>
           </div>
         ))}

@@ -7,7 +7,7 @@ const Collection = () => {
   const navigate = useNavigate();
 
   const handleViewAll = () => {
-    navigate("/collections");
+    navigate("/allcollections");
   };
 
   return (

@@ -2,23 +2,57 @@ import React, { useState } from "react";
 
 const CollectionCard = ({ name, description, images }) => {
   const [current, setCurrent] = useState(0);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
 
   const nextImage = () => setCurrent((prev) => (prev + 1) % images.length);
   const prevImage = () =>
     setCurrent((prev) => (prev - 1 + images.length) % images.length);
 
+  // Touch Handlers
+  const handleTouchStart = (e) => {
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStartX || !touchEndX) return;
+
+    const distance = touchStartX - touchEndX;
+    const swipeThreshold = 50; // Minimum px to be considered swipe
+
+    if (distance > swipeThreshold) {
+      nextImage(); // swipe left
+    } else if (distance < -swipeThreshold) {
+      prevImage(); // swipe right
+    }
+
+    // Reset
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
   return (
     <div
-      className="w-full  max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto shadow-lg rounded-lg overflow-hidden"
+      className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto shadow-lg rounded-lg overflow-hidden"
       style={{ backgroundColor: "#171717" }}
     >
-      {/* Image Carousel */}
-      <div className="relative w-full">
+      {/* Image Carousel with Swipe */}
+      <div
+        className="relative w-full"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <img
           src={images[current]}
           alt={name}
           className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover transition-all duration-300"
         />
+
         {/* Prev Button */}
         <button
           onClick={prevImage}
@@ -26,6 +60,7 @@ const CollectionCard = ({ name, description, images }) => {
         >
           ‹
         </button>
+
         {/* Next Button */}
         <button
           onClick={nextImage}

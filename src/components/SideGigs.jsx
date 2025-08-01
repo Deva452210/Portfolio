@@ -5,6 +5,10 @@ import { useNavigate } from "react-router-dom";
 const SideGigs = () => {
   const navigate = useNavigate();
 
+  const handleCardClick = (id) => {
+    navigate(`/sidegig/${id}`);
+  };
+
   return (
     <section
       className="py-16 px-4 text-center"
@@ -24,7 +28,7 @@ const SideGigs = () => {
         {data.MyCaseStudies.map((gig) => (
           <div
             key={gig.id}
-            onClick={() => navigate("/sidegigsdetails", { state: gig })}
+            onClick={() => handleCardClick(gig.id)}
             className=" cursor-pointer rounded-lg shadow-md text-left hover:shadow-xl transition"
           >
             <img
