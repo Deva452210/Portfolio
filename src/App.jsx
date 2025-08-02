@@ -6,11 +6,12 @@ import AllSideGigs from "./pages/AllSideGigs";
 import AllCollections from "./pages/AllCollection";
 import ProjectDetails from "./pages/ProjectDetails";
 import SideGigDetails from "./pages/SideGigsDetails";
-
+import ScrollToTop from "./components/ScrollToTop"; // 👈 import here
 function App() {
   return (
     <div className="App">
       <Header />
+      <ScrollToTop />
       <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
