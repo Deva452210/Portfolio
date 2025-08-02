@@ -15,38 +15,86 @@ const SideGigDetails = () => {
     );
   }
 
+  const renderList = (items) => (
+    <ul className="list-disc list-inside space-y-1">
+      {items.map((item, index) => (
+        <li key={index} className="text-sm text-[var(--text-gray)]">
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <>
-      <div className="max-w-4xl pt-28 py-10 px-6  mx-auto">
-        {/* Back Button on the left */}
+      <div className="max-w-4xl pt-28 px-6 mx-auto">
         <BackButton />
       </div>
+
       <section
-        className=" pt-0 py-20 px-6 max-w-4xl mx-auto"
+        className="pt-6 pb-20 px-6 max-w-4xl mx-auto"
         style={{
           backgroundColor: "var(--background-color-lite)",
           color: "var(--text-color)",
         }}
       >
-        <h1 className="text-4xl font-bold mb-6">{gig.title}</h1>
         <img
           src={gig.image}
           alt={gig.title}
           className="w-full rounded-lg mb-6 object-cover"
         />
-        <p className="text-lg italic text-gray-400 mb-4">{gig.subtitle}</p>
-        <div className="text-sm mb-6">{gig.description}</div>
 
-        <div className="flex flex-wrap gap-2">
-          {gig.tags.map((tag, index) => (
-            <span
-              key={index}
-              className="bg-gray-700 text-white px-3 py-1 rounded-full text-xs"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
+        <h1 className="text-4xl font-bold mb-4">{gig.title}</h1>
+        <p className="text-base text-gray-400 italic mb-6">{gig.category}</p>
+        <p className="text-md text-[var(--text-color)] mb-6">{gig.context}</p>
+
+        {/* Problem */}
+        {gig.problem && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Problem</h3>
+            {renderList(gig.problem)}
+          </div>
+        )}
+
+        {/* Solution */}
+        {gig.solution && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Solution</h3>
+            <p className="text-sm text-[var(--text-gray)]">{gig.solution}</p>
+          </div>
+        )}
+
+        {/* Features */}
+        {gig.features && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Key Features</h3>
+            {renderList(gig.features)}
+          </div>
+        )}
+
+        {/* Results */}
+        {gig.results && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Results</h3>
+            {renderList(gig.results)}
+          </div>
+        )}
+
+        {/* Learnings */}
+        {gig.learnings && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">What I Learned</h3>
+            {renderList(gig.learnings)}
+          </div>
+        )}
+
+        {/* My Role */}
+        {gig.myRole && (
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">My Role</h3>
+            {renderList(gig.myRole)}
+          </div>
+        )}
       </section>
     </>
   );

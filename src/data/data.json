@@ -183,35 +183,86 @@
   ],
   
   "MyCaseStudies": [
-    {
+      {
       "id": 1,
-      "title": "Tea Stall Innovation During COVID",
-      "subtitle": "Organic Snacks | Zero Plastic | 3x Sales Growth",
-        "image": "/assets/projects/recent-blog.jpg",
-      "problem": "During COVID, tea stall business was hit due to fewer customers and hygiene concerns.",
-      "solution": "Introduced handmade organic snacks with long shelf life and zero plastic packaging based on customer observations. Marketed it via word of mouth.",
-      "impact": [
-        "3x business growth within a few months",
-        "Built trust with eco-friendly packaging",
-        "Learned customer-first thinking & persistence"
+      "title": "Boosting a Local Tea Stall Business During COVID",
+       "image": "/assets/projects/recent-blog.jpg",
+      "category": "Business Development",
+      "context": "Local tea stall facing low sales during the COVID-19 lockdown.",
+      "problem": [
+        "Drop in revenue due to COVID restrictions",
+        "Customer hesitancy towards unpacked or factory snacks",
+        "Lack of product differentiation",
+        "Single-stream income (just tea/coffee)"
       ],
-      "toolsUsed": ["Market Research", "Customer Observation", "Packaging Design"],
-      "tags": ["Entrepreneurship", "Problem Solving", "Sustainability"]
+      "solution": "Introduced handmade, organic, plastic-free packaged snacks to be sold with tea combos. Leveraged local women cooks and sustainable packaging.",
+      "features": [
+        "Zero plastic packaging",
+        "Traditional South Indian snacks (Ragi Murukku, Millet Laddu)",
+        "Tea + snack combos (₹15)",
+        "Paper-based, hygienic jars",
+        "Women empowerment through home-prepared snacks"
+      ],
+      "results": [
+        "Sales tripled within 2 months",
+        "30% of tea buyers purchased snacks",
+        "Repeat customers increased",
+        "2 other stalls showed interest",
+        "Local women earned ₹2,000–₹3,000/month extra"
+      ],
+      "learnings": [
+        "Customer-first mindset drives innovation",
+        "Sustainable packaging adds emotional value",
+        "Small tweaks = big impact",
+        "Empathy-led design helps community"
+      ],
+      "myRole": [
+        "Identified customer behavior and gaps",
+        "Created snack product line and branding",
+        "Sourced from local cooks and farmers",
+        "Educated tea stall owner",
+        "Measured impact and optimized pricing"
+      ]
     },
     {
       "id": 2,
-      "title": "Siva E-Corner Digital Access",
-      "subtitle": "Government Services Made Easy",
+      "title": "Siva E-Corner – Digitizing Access to Government Services",
        "image": "/assets/projects/recent-blog.jpg",
-      "problem": "Users found it difficult to access or understand various e-governance services provided through CSC and e-Sevai centers.",
-      "solution": "Designed a centralized platform where users can search for services, know required documents, fees, and processing time.",
-      "impact": [
-        "Improved service clarity for users",
-        "Reduced walk-ins with pre-informed users",
-        "Increased digital engagement with local services"
+      "category": "UX/UI & Web Development",
+      "context": "Local e-service center lacked digital presence and customers struggled to know which documents and charges applied to which government service.",
+      "problem": [
+        "No central listing of services or required documents",
+        "Lack of fee transparency",
+        "Wasted visits due to missing information",
+        "No digital booking mechanism"
       ],
-      "toolsUsed": ["Figma", "User Research", "UI/UX Design"],
-      "tags": ["UI/UX", "Service Design", "GovTech"]
+      "solution": "Built a clean and mobile-friendly website showing all services, fees, required documents, and processing time – with WhatsApp booking support.",
+      "features": [
+        "Search and filter services (e.g., PAN, community certificate)",
+        "Show service fee, documents, and time required",
+        "Category filters (Certificates, Bills, Banking, etc.)",
+        "WhatsApp deep link for service booking",
+        "Mobile-first responsive layout"
+      ],
+      "results": [
+        "Fewer wasted visits; customers came prepared",
+        "Improved counter efficiency and trust",
+        "Increased visibility and footfall",
+        "Link sharing enabled wider access to services"
+      ],
+      "learnings": [
+        "Clarity and transparency improve user experience",
+        "Simple digital tools can create big local impact",
+        "Designing for low-tech users needs empathy",
+        "Strong UX reduces service time and confusion"
+      ],
+      "myRole": [
+        "Identified user pain points through observation",
+        "Designed the entire UI/UX layout",
+        "Developed frontend using HTML, CSS, JS",
+        "Populated service data and deployed",
+        "Trained staff to use and promote the website"
+      ]
     }
   ],
   
@@ -300,6 +351,8 @@
       ]
     }
   ]
+
+
 
 
 
