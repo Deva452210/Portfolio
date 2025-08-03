@@ -19,7 +19,7 @@ const Projects = () => {
   }, [activeTab]);
 
   const handleViewAll = () => {
-    navigate("/projects", { state: { category: activeTab } });
+    navigate("/allprojects", { state: { category: activeTab } });
   };
 
   return (

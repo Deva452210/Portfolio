@@ -49,7 +49,7 @@
     
     {
       "id": 7,
-      "image": "/assets/projects/recent-blog.jpg",
+      "image": "/assets/projects/fe_azhagi.jpg",
       "title": "Weather App",
       "desc": "Fetches weather data from API and displays it beautifully.",
       "stack": ["HTML", "CSS", "JavaScript", "OpenWeather API"],
@@ -57,7 +57,7 @@
     },
     {
       "id": 8,
-      "image": "/assets/projects/recent-blog.jpg",
+      "image": "/assets/projects/fe_django.jpg",
       "title": "To-Do List",
       "desc": "Simple yet interactive to-do app with task management.",
       "stack": ["React", "CSS Modules"],
@@ -65,7 +65,55 @@
     },
     {
       "id": 9,
-      "image": "/assets/projects/recent-blog.jpg",
+      "image": "/assets/projects/fe_bolt.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 10,
+      "image": "/assets/projects/fe_hoobank.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 11,
+      "image": "/assets/projects/fe_kurinji.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 12,
+      "image": "/assets/projects/fe_rolex.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 13,
+      "image": "/assets/projects/fe_spacex.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 14,
+      "image": "/assets/projects/fe_tesla.jpg",
+      "title": "Movie Explorer",
+      "desc": "Browse and search movies using TMDB API.",
+      "stack": ["React", "Tailwind", "TMDB API"],
+      "category": "Frontend"
+    },
+    {
+      "id": 15,
+      "image": "/assets/projects/fe_utube.jpg",
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
@@ -74,32 +122,32 @@
 
     
     {
-      "id": 10,
-      "image": "/assets/projects/recent-blog.jpg",
+      "id": 16,
+      "image": "/assets/projects/uiux_siva.jpg",
       "title": "Travel App UI",
       "desc": "Figma design of a travel booking mobile app.",
       "stack": ["Figma", "UI Kit", "Prototyping"],
       "category": "UI/UX"
     },
     {
-      "id": 11,
-      "image": "/assets/projects/recent-blog.jpg",
+      "id": 17,
+      "image": "/assets/projects/uiux_cc.jpg",
       "title": "Food Delivery Web UI",
       "desc": "Responsive web UI for a food delivery platform.",
       "stack": ["Adobe XD", "Wireframes", "Responsive Grid"],
       "category": "UI/UX"
     },
     {
-      "id": 12,
-      "image": "/assets/projects/recent-blog.jpg",
+      "id": 18,
+      "image": "/assets/projects/uiux_saas.jpg",
       "title": "Banking App Redesign",
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
       "category": "UI/UX"
     },
     {
-      "id": 13,
-      "image": "/assets/projects/recent-blog.jpg",
+      "id": 19,
+      "image": "/assets/projects/uiux_elden.jpg",
       "title": "Banking App Redesign",
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
@@ -227,7 +275,7 @@
     {
       "id": 2,
       "title": "Siva E-Corner – Digitizing Access to Government Services",
-       "image": "/assets/projects/recent-blog.jpg",
+      "image": "/assets/projects/uiux_siva.jpg",
       "category": "UX/UI & Web Development",
       "context": "Local e-service center lacked digital presence and customers struggled to know which documents and charges applied to which government service.",
       "problem": [

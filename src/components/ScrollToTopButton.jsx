@@ -29,7 +29,7 @@ const ScrollToTopButton = () => {
           className="fixed bottom-6 right-6 z-50 p-3 rounded-full text-white shadow-lg cursor-pointer transition-all"
           style={{
             backgroundColor: "var(--background-color-lite)",
-            hover: { backgroundColor: "var(--background-color)" },
+            hover: { backgroundColor: "#313131" },
           }}
           aria-label="Scroll to top"
         >
