@@ -8,6 +8,7 @@
       "title": "Portfolio Website",
       "desc": "A personal portfolio website showcasing projects, skills, and contact info.",
       "stack": ["React", "Tailwind CSS", "EmailJS"],
+      "liveLink": "https://your-project-link.com",
       "category": "Recent"
     },
     {
@@ -16,6 +17,7 @@
       "title": "Blog CMS",
       "desc": "A content management system for creating and publishing blog posts.",
       "stack": ["Node.js", "MongoDB", "Express"],
+      "liveLink": "https://your-project-link.com",
       "category": "Recent"
     },
     
@@ -27,6 +29,7 @@
       "title": "Bank Management System",
       "desc": "A console-based banking app for managing accounts and transactions.",
       "stack": ["Java", "JDBC", "MySQL"],
+      "liveLink": "https://your-project-link.com",
       "category": "Java/Spingboot"
     },
     {
@@ -35,6 +38,7 @@
       "title": "Library Management App",
       "desc": "Desktop app to manage book lending and member registration.",
       "stack": ["JavaFX", "Java", "SQLite"],
+      "liveLink": "https://your-project-link.com",
       "category": "Java/Spingboot"
     },
     {
@@ -43,6 +47,7 @@
       "title": "Student Grading System",
       "desc": "CLI-based application to manage student records and grades.",
       "stack": ["Java", "OOP", "File I/O"],
+      "liveLink": "https://your-project-link.com",
       "category": "Java/Spingboot"
     },
 
@@ -53,6 +58,7 @@
       "title": "Weather App",
       "desc": "Fetches weather data from API and displays it beautifully.",
       "stack": ["HTML", "CSS", "JavaScript", "OpenWeather API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -61,6 +67,7 @@
       "title": "To-Do List",
       "desc": "Simple yet interactive to-do app with task management.",
       "stack": ["React", "CSS Modules"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -69,6 +76,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -77,6 +85,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -85,6 +94,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -93,6 +103,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -101,6 +112,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -109,6 +121,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
     {
@@ -117,6 +130,7 @@
       "title": "Movie Explorer",
       "desc": "Browse and search movies using TMDB API.",
       "stack": ["React", "Tailwind", "TMDB API"],
+      "liveLink": "https://your-project-link.com",
       "category": "Frontend"
     },
 
@@ -127,6 +141,7 @@
       "title": "Travel App UI",
       "desc": "Figma design of a travel booking mobile app.",
       "stack": ["Figma", "UI Kit", "Prototyping"],
+      "liveLink": "https://your-project-link.com",
       "category": "UI/UX"
     },
     {
@@ -135,6 +150,7 @@
       "title": "Food Delivery Web UI",
       "desc": "Responsive web UI for a food delivery platform.",
       "stack": ["Adobe XD", "Wireframes", "Responsive Grid"],
+      "liveLink": "https://your-project-link.com",
       "category": "UI/UX"
     },
     {
@@ -143,6 +159,7 @@
       "title": "Banking App Redesign",
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
+      "liveLink": "https://your-project-link.com",
       "category": "UI/UX"
     },
     {
@@ -151,6 +168,7 @@
       "title": "Banking App Redesign",
       "desc": "Revamped UI for a modern banking experience.",
       "stack": ["Figma", "User Flow", "Design System"],
+      "liveLink": "https://your-project-link.com",
       "category": "UI/UX"
     }
   ],
