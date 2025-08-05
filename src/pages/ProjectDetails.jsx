@@ -74,7 +74,7 @@ const ProjectDetails = () => {
         <p className="text-md mb-4">{project.desc}</p>
 
         <h3 className="text-xl font-semibold mb-2">Tech Stack</h3>
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-4">
           {project.stack.map((tech, i) => (
             <span
               key={i}
@@ -93,17 +93,17 @@ const ProjectDetails = () => {
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full bg-blue-600 text-white text-center py-3 rounded font-medium"
+            className="block w-full bg-[var(--primary-color)] text-black text-center py-3 rounded font-medium"
           >
-            🔗 View Live
+            View Live
           </a>
         </div>
       )}
 
       {/* Similar Projects Section */}
-      {/* Similar Projects Section */}
+
       {project && (
-        <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <section className="pt-5 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <h2
             className="text-2xl sm:text-3xl font-bold mb-8 text-center"
             style={{ fontFamily: "var(--font-secondary)" }}
