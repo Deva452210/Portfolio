@@ -38,7 +38,7 @@ const ProjectDetails = () => {
         }}
       >
         {/* Floating card only visible on large screens */}
-        {project.liveLink && (
+        {project.liveLink && project.category !== "UI/UX" && (
           <div className="hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 z-50">
             <div
               className="bg-white shadow-lg rounded-lg p-4 w-[260px] flex flex-col items-center"
@@ -87,7 +87,7 @@ const ProjectDetails = () => {
       </section>
 
       {/* Sticky button for mobile */}
-      {project.liveLink && (
+      {project.liveLink && project.category !== "UI/UX" && (
         <div className="lg:hidden fixed bottom-0 left-0 right-0 px-4 py-3 bg-[var(--card-background)] shadow-md z-50">
           <a
             href={project.liveLink}
@@ -112,22 +112,32 @@ const ProjectDetails = () => {
           </h2>
 
           {(() => {
-            // Step 1: Filter next 3 from same category and ID > current
-            const similarCategoryProjects = data.MyProjects.filter(
+            const sameCategory = data.MyProjects.filter(
               (p) => p.category === project.category && p.id > project.id
             ).slice(0, 3);
 
-            // Step 2: Fallback to any available projects after current.id (if same-category is empty)
-            const fallbackProjects =
-              similarCategoryProjects.length > 0
-                ? similarCategoryProjects
-                : data.MyProjects.filter(
-                    (p) => p.id > project.id && p.id !== project.id
-                  ).slice(0, 3);
+            let finalProjects = [];
+
+            if (sameCategory.length > 0) {
+              finalProjects = sameCategory;
+            } else {
+              const otherProjects = data.MyProjects.filter(
+                (p) => p.id > project.id && p.id !== project.id
+              ).slice(0, 3);
+
+              if (otherProjects.length > 0) {
+                finalProjects = otherProjects;
+              } else {
+                // If current project is the last one, fetch from the start (excluding the current)
+                finalProjects = data.MyProjects.filter(
+                  (p) => p.id !== project.id
+                ).slice(0, 3);
+              }
+            }
 
             return (
               <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                {fallbackProjects.map((similarProject) => (
+                {finalProjects.map((similarProject) => (
                   <div
                     key={similarProject.id}
                     onClick={() =>
