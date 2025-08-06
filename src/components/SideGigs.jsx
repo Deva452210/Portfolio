@@ -37,7 +37,9 @@ const SideGigs = () => {
               className="w-full h-fit object-cover rounded-md mb-4"
             />
             <h3 className="text-xl font-bold mb-1">{gig.title}</h3>
-            <p className="text-sm text-gray-200 mb-2">{gig.subtitle}</p>
+            <p className="text-sm text-gray-200 mb-2 truncate">
+              {gig.subtitle}
+            </p>
           </div>
         ))}
       </div>

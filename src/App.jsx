@@ -7,6 +7,7 @@ import AllCollections from "./pages/AllCollection";
 import ProjectDetails from "./pages/ProjectDetails";
 import SideGigDetails from "./pages/SideGigsDetails";
 import ScrollToTop from "./components/ScrollToTop"; // 👈 import here
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/sidegig/:id" element={<SideGigDetails />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }

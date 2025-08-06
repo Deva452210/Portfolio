@@ -1,26 +1,25 @@
 
 {
   "MyProjects": [
-   
-    {
+      {
       "id": 1,
       "image": "/assets/projects/recent-blog.jpg",
-      "title": "Portfolio Website",
-      "desc": "A personal portfolio website showcasing projects, skills, and contact info.",
-      "stack": ["React", "Tailwind CSS", "EmailJS"],
+      "title": "NetflixGPT",
+      "desc": "NetflixGPT is an AI-powered streaming platform inspired by Netflix, built to offer an enhanced movie discovery experience. While it functions as a Netflix clone with a sleek UI and movie listings, the standout feature is its AI-based search system.Using the TMDB API, the app fetches detailed and up-to-date movie data, including titles, posters, genres, and overviews. The integrated Gemini AI API powers an intelligent search experience, allowing users to describe their mood or interests in natural language (e.g., “feel-good rom-coms with travel themes”), and receive personalized recommendations that match those preferences. This blend of a rich movie database with conversational AI makes NetflixGPT a smart and intuitive platform for content discovery.",
+      "stack": ["ReactJS", "Tailwind CSS","Redux", "Gemini AI","TMDB API", "Node.js", "Express", "MongoDB"],
       "liveLink": "https://your-project-link.com",
       "category": "Recent"
     },
+   
     {
       "id": 2,
       "image": "/assets/projects/recent-blog.jpg",
-      "title": "Blog CMS",
-      "desc": "A content management system for creating and publishing blog posts.",
-      "stack": ["Node.js", "MongoDB", "Express"],
+      "title": "Bloggy",
+      "desc": "Bloggy is a modern blog publishing platform designed for simplicity and efficiency. The website allows users to explore a variety of blog posts, with content generated using Gemini AI to ensure high-quality, engaging writing.\nTo manage content seamlessly, Bloggy features an integrated Admin Dashboard, where administrators can create, edit, and delete blog posts, manage categories, and oversee user activity. The platform is built for scalability and content freshness, making it ideal for individual writers, publishers, or businesses looking to maintain a consistent online presence.",
+      "stack": ["ReactJS", "Tailwind CSS", "Gemini AI", "Node.js", "Express", "MongoDB"],
       "liveLink": "https://your-project-link.com",
       "category": "Recent"
-    },
-    
+    }, 
 
    
     {
@@ -55,82 +54,82 @@
     {
       "id": 7,
       "image": "/assets/projects/fe_azhagi.jpg",
-      "title": "Weather App",
-      "desc": "Fetches weather data from API and displays it beautifully.",
-      "stack": ["HTML", "CSS", "JavaScript", "OpenWeather API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Azhagi",
+      "desc": "Local tea stall facing low sales during the COVID-19 lockdown. Created a website to promote handmade, organic snacks sold with tea combos.",
+      "stack": ["ReactJS", "Tailwind CSS"],
+      "liveLink": "https://azhagi.netlify.app/",
       "category": "Frontend"
     },
     {
       "id": 8,
       "image": "/assets/projects/fe_django.jpg",
-      "title": "To-Do List",
-      "desc": "Simple yet interactive to-do app with task management.",
-      "stack": ["React", "CSS Modules"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Django",
+      "desc": "An ecommerce website built using Reactjs, showcasing products and allowing user interactions.",
+     "stack": ["ReactJS", "Tailwind CSS"],
+      "liveLink": "https://django-mauve.vercel.app/",
       "category": "Frontend"
     },
     {
       "id": 9,
       "image": "/assets/projects/fe_bolt.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Bolt",
+      "desc": "A responsive social media website built using ReactJS and Tailwind CSS, featuring user profiles, posts, and interactions.",
+      "stack": ["ReactJS", "Tailwind CSS"],
+      "liveLink": "https://dev-bolt.netlify.app/",
       "category": "Frontend"
     },
     {
       "id": 10,
       "image": "/assets/projects/fe_hoobank.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Dev Bank",
+      "desc": "Modern and stylish single page banking application. Built with ReactJS and Tailwind CSS, it features a clean UI.",
+      "stack": ["ReactJS", "Tailwind CSS"],
+      "liveLink": "https://dev-bank-three.vercel.app/#clients",
       "category": "Frontend"
     },
     {
       "id": 11,
       "image": "/assets/projects/fe_kurinji.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Kurinji",
+      "desc": "Local tea stall facing low sales during the COVID-19 lockdown. Created a website to promote handmade, organic snacks sold with tea combos.",
+      "stack": ["ReactJS", "Tailwind CSS"],
+      "liveLink": "https://kurinji-mocha.vercel.app/",
       "category": "Frontend"
     },
     {
       "id": 12,
       "image": "/assets/projects/fe_rolex.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Rolex Clone",
+      "desc": "Cloned the Rolex website to showcase products and features.",
+      "stack": ["HTML", "CSS ", "JavaScript"],
+      "liveLink": "https://rolex-clone.netlify.app/",
       "category": "Frontend"
     },
     {
       "id": 13,
       "image": "/assets/projects/fe_spacex.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "SpaceX Clone",
+      "desc": "Cloned the SpaceX website to showcase products and features.",
+      "stack": ["HTML", "CSS ", "JavaScript"],
+      "liveLink": "https://spacex-clone-flame.vercel.app/",
       "category": "Frontend"
     },
     {
       "id": 14,
       "image": "/assets/projects/fe_tesla.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Tesla Clone",
+      "desc": "Cloned the Tesla website to showcase products and features.",
+       "stack": ["HTML", "CSS ", "JavaScript"],
+      "liveLink": "https://tesla-clone-three-zeta.vercel.app/",
       "category": "Frontend"
     },
     {
       "id": 15,
       "image": "/assets/projects/fe_utube.jpg",
-      "title": "Movie Explorer",
-      "desc": "Browse and search movies using TMDB API.",
-      "stack": ["React", "Tailwind", "TMDB API"],
-      "liveLink": "https://your-project-link.com",
+      "title": "YouTube Clone",
+      "desc": "Clone the YouTube homepage with a focus on responsive design and user experience.",
+       "stack": ["HTML", "CSS ", "JavaScript"],
+      "liveLink": "https://dev-youtube-clone-nine.vercel.app/",
       "category": "Frontend"
     },
 
@@ -138,26 +137,26 @@
     {
       "id": 16,
       "image": "/assets/projects/uiux_siva.jpg",
-      "title": "Travel App UI",
-      "desc": "Figma design of a travel booking mobile app.",
-      "stack": ["Figma", "UI Kit", "Prototyping"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Siva E-Corner",
+      "desc": "Local e-service center lacked digital presence and customers struggled to know which documents and charges applied to which government service.",
+      "stack": ["Figma", "UI Kit", "Prototyping", "Photoshop"],
+      "liveLink": "https://siva-e-corner.framer.website/",
       "category": "UI/UX"
     },
     {
       "id": 17,
       "image": "/assets/projects/uiux_cc.jpg",
-      "title": "Food Delivery Web UI",
-      "desc": "Responsive web UI for a food delivery platform.",
-      "stack": ["Adobe XD", "Wireframes", "Responsive Grid"],
-      "liveLink": "https://your-project-link.com",
+      "title": "Cyclecircle",
+      "desc": "Ecommmerce website for a bicycle company, showcasing products and features.",
+       "stack": ["Figma", "UI Kit", "Prototyping", "Photoshop"],
+      "liveLink": "https://www.behance.net/gallery/190069555/UIUX-Case-Study",
       "category": "UI/UX"
     },
     {
       "id": 18,
       "image": "/assets/projects/uiux_saas.jpg",
-      "title": "Banking App Redesign",
-      "desc": "Revamped UI for a modern banking experience.",
+      "title": "Baymax",
+      "desc": "This SaaS product using Al is mainly crafted tp ensure users are able to do multiple Image editing and being benefited from a single platform",
       "stack": ["Figma", "User Flow", "Design System"],
       "liveLink": "https://your-project-link.com",
       "category": "UI/UX"
@@ -165,8 +164,8 @@
     {
       "id": 19,
       "image": "/assets/projects/uiux_elden.jpg",
-      "title": "Banking App Redesign",
-      "desc": "Revamped UI for a modern banking experience.",
+      "title": "Elden Ring",
+      "desc": "Elden ring is a fantasy action role-playing game developed by FromSoftware. The UI/UX design focuses on immersive user experience and intuitive navigation.",
       "stack": ["Figma", "User Flow", "Design System"],
       "liveLink": "https://your-project-link.com",
       "category": "UI/UX"

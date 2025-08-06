@@ -47,18 +47,20 @@ const Header = () => {
           className="hidden md:flex gap-2"
           style={{ fontFamily: "var(--font-primary)" }}
         >
-          <button className="px-4 py-2 rounded-md">
+          <button className="px-4 py-2 rounded-md  hover:text-[var(--primary-color)]">
             <Link to={"/allprojects"}>Projects</Link>
           </button>
-          <button className="px-4 py-2 rounded-md">
+          <button className="px-4 py-2 rounded-md  hover:text-[var(--primary-color)]">
             <Link to={"/allsidegigs"}>Side Gigs</Link>
           </button>
-          <button className="px-4 py-2 rounded-md">
+          <button className="px-4 py-2 rounded-md  hover:text-[var(--primary-color)]">
             <Link to={"/allcollections"}>Collection</Link>
           </button>
           <button
             className="px-4 py-2 font-bold text-black"
-            style={{ color: "var(--primary-color)" }}
+            style={{
+              color: "var(--primary-color)",
+            }}
           >
             Resume
           </button>
@@ -78,13 +80,13 @@ const Header = () => {
           ref={menuRef}
           className="md:hidden mt-3 flex flex-col gap-3 px-4 pb-4"
         >
-          <button className="w-full text-left px-4 py-2 rounded-md hover:bg-blue-100 transition">
+          <button className="w-full text-left px-4 py-2 rounded-md  ">
             <Link to={"/allprojects"}>Projects</Link>
           </button>
-          <button className="w-full text-left px-4 py-2 rounded-md hover:bg-blue-100 transition">
+          <button className="w-full text-left px-4 py-2 rounded-md  ">
             <Link to={"/allsidegigs"}>Side Gigs</Link>
           </button>
-          <button className="w-full text-left px-4 py-2 rounded-md hover:bg-blue-100 transition">
+          <button className="w-full text-left px-4 py-2 rounded-md  ">
             <Link to={"/allcollections"}>Collection</Link>
           </button>
         </div>

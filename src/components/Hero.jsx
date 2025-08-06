@@ -1,3 +1,4 @@
+import SocialIcons from "./SocialIcons";
 import nameImg from "/assets/name.png";
 import {
   Github,
@@ -43,7 +44,7 @@ const Hero = () => {
 
           {/* Contact */}
           <div className="flex items-center justify-center gap-4 mt-4">
-            <button className="px-4 py-2 rounded text-white font-semibold  cursor-pointer  bg-[var(--card-category)]  hover:bg-[#313131] ">
+            <button className="px-4 py-2 rounded text-white font-semibold  cursor-pointer  bg-[var(--card-category)]  hover:text-[var(--primary-color)] ">
               Contact me
             </button>
             <button className="px-4 py-2 rounded flex items-center gap-1 font-semibold  bg-[var(--primary-color)] hover:bg-[#F5D400]  text-black cursor-pointer ">
@@ -53,20 +54,7 @@ const Hero = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="mt-4 flex items-center justify-center gap-4">
-            <div className="p-4 rounded-full cursor-pointer  bg-[var(--card-category)]  hover:bg-[#313131] ">
-              <Github />
-            </div>
-            <div className="p-4 rounded-full cursor-pointer  bg-[var(--card-category)]  hover:bg-[#313131] ">
-              <Linkedin />
-            </div>
-            <div className="p-4 rounded-full cursor-pointer  bg-[var(--card-category)]  hover:bg-[#313131] ">
-              <Brush />
-            </div>
-            <div className="p-4 rounded-full cursor-pointer  bg-[var(--card-category)]  hover:bg-[#313131] ">
-              <CodeXml />
-            </div>
-          </div>
+          <SocialIcons />
         </div>
 
         {/* Right Section (Profile Image) */}

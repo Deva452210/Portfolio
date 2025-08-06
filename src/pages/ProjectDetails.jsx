@@ -1,7 +1,5 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import BackButton from "../components/BackButton";
-import { ExternalLink } from "lucide-react";
 import data from "../data/data.json"; // Add at the top with other imports
 import ProjectCard from "../components/ProjectCard"; // If not imported already
 
@@ -37,8 +35,8 @@ const ProjectDetails = () => {
           color: "var(--text-color)",
         }}
       >
-        {/* Floating card only visible on large screens */}
-        {project.liveLink && project.category !== "UI/UX" && (
+        {/* Floating card for large screens (UI/UX condition removed) */}
+        {project.liveLink && (
           <div className="hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 z-50">
             <div
               className="bg-white shadow-lg rounded-lg p-4 w-[260px] flex flex-col items-center"
@@ -78,7 +76,12 @@ const ProjectDetails = () => {
           {project.stack.map((tech, i) => (
             <span
               key={i}
-              className="bg-gray-200 text-gray-800 px-3 py-1 text-sm rounded-full"
+              // className="bg-gray-200 text-gray-800 px-3 py-1 text-sm rounded-full"
+              className="text-xs  px-3 py-2 rounded-sm"
+              style={{
+                backgroundColor: "var(--card-category)",
+                color: "var(--text-color)",
+              }}
             >
               {tech}
             </span>
@@ -86,8 +89,8 @@ const ProjectDetails = () => {
         </div>
       </section>
 
-      {/* Sticky button for mobile */}
-      {project.liveLink && project.category !== "UI/UX" && (
+      {/* Sticky mobile button (UI/UX condition removed) */}
+      {project.liveLink && (
         <div className="lg:hidden fixed bottom-0 left-0 right-0 px-4 py-3 bg-[var(--card-background)] shadow-md z-50">
           <a
             href={project.liveLink}
@@ -101,7 +104,6 @@ const ProjectDetails = () => {
       )}
 
       {/* Similar Projects Section */}
-
       {project && (
         <section className="pt-5 pb-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
           <h2
@@ -128,7 +130,6 @@ const ProjectDetails = () => {
               if (otherProjects.length > 0) {
                 finalProjects = otherProjects;
               } else {
-                // If current project is the last one, fetch from the start (excluding the current)
                 finalProjects = data.MyProjects.filter(
                   (p) => p.id !== project.id
                 ).slice(0, 3);
