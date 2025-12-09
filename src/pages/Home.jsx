@@ -14,7 +14,7 @@ const Home = () => {
       <Skills />
       <SideGigs />
       <Collection />
-      <ScrollToTopButton /> {/* Add this */}
+      <ScrollToTopButton />
     </div>
   );
 };
